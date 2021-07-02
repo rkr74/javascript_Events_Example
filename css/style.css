@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+#myDIV {
+  margin: 25px;
+  width: 200px;
+  height: 100px;
+  background: orange;
+  position: relative;
+  font-size: 20px;
+}
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: -200px;}
+}
+.droptarget { 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 5px;
+  border: 1px solid #aaaaaa;
+}
+/*box start*/
+#cursor {
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid #333;
+  border-radius: 50%;
+  transition: .3s;
+}
